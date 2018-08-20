@@ -5,7 +5,7 @@ const request = require("request")
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   var placeId = req.query.placeid;
-  var key = "AIzaSyD3s6OJpYDXIgCj0EZST4oOvKjVdsL8qLc";
+  var key = "";
 
   request.get({url: "https://maps.googleapis.com/maps/api/place/details/json",
     qs: {placeid: placeId, key: key}}, function(err, response, body) {

@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 const request = require("request")
 
-const apiKey = "UfiDeVoMiyo8Hq40zMxPBQrdpcsOc3_W9KrC3VJjgmkSiz6ObDOI0vMstwH1d1cSbhYGFNg_qIQo1KA8HmmM9YBf3fyK0ChAyYi4JQzZAuKZCYCUJrzmESVA2LvCWnYx";
+const apiKey = "";
 const yelp = require('yelp-fusion');
 const client = yelp.client(apiKey);
 

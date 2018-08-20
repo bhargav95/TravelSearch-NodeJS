@@ -19,7 +19,7 @@ function getNextPage(token,results, res, count){
   delay(2000)
       .then(() => {
           request.get({url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json",
-            qs: {pagetoken: token, key: "AIzaSyAm5mFu-skF-aFf3aNNTo3K6YmZlN_-wLQ"}}, function(err, response, body){
+            qs: {pagetoken: token, key: ""}}, function(err, response, body){
 
               resjson =JSON.parse(body);
 
@@ -34,7 +34,7 @@ function getNextPage(token,results, res, count){
 
 function listPlaces(json1,place,res){
   request.get({url: "https://maps.googleapis.com/maps/api/geocode/json",
-    qs: {address: place, key: "AIzaSyAm5mFu-skF-aFf3aNNTo3K6YmZlN_-wLQ"}}, function(err, response, body) {
+    qs: {address: place, key: ""}}, function(err, response, body) {
 
       console.log(JSON.parse(body).results[0]);
 
